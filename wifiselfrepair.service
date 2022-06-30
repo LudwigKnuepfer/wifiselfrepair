@@ -1,0 +1,9 @@
+[Unit]
+Description = WIFI self repair service
+After = network.target
+
+[Service]
+ExecStart = /usr/local/bin/wifiselfrepair.sh
+
+[Install]
+WantedBy = multi-user.target
